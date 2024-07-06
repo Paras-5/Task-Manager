@@ -8,14 +8,14 @@ Website URL: [https://nodejs.org/en](https://nodejs.org/en)
 Install npm and all other dependencies `npm i`.
 You can check package.json file for dependencies.
 
-## Step 2
+## Step 3
 Login to the MongoDB database and create a new cluster and database.
 Website URL: [https://www.mongodb.com/](https://www.mongodb.com/)
 
-## Step 3
+## Step 4
 Change the MongoDB string in the `.env` file (MONGOURL) with your own database, username, and password.
 
-## Step 4
+## Step 5
 Open terminal and go to the client directory and run the command: `npm start`. Then, go to the server directory and run the command: `npm start`.
 
 
