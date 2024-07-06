@@ -5,6 +5,10 @@ Install Node.js (if you haven't installed)
 Website URL: [https://nodejs.org/en](https://nodejs.org/en)
 
 ## Step 2
+Install npm and all other dependencies `npm i`.
+You can check package.json file for dependencies.
+
+## Step 2
 Login to the MongoDB database and create a new cluster and database.
 Website URL: [https://www.mongodb.com/](https://www.mongodb.com/)
 
