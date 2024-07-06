@@ -1,8 +1,4 @@
-
-
-=========================================================================
-
-Steps to run Task Manager Application Project
+Steps to run Task Manager Application Project on Local Environment
 =============================
 
 Step-1:
