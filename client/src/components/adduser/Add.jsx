@@ -4,6 +4,8 @@ import axios from "axios";
 import "./add.css";
 import toast from 'react-hot-toast';
 
+const apiUrl = process.env.REACT_APP_API_URL;
+
 const Add = () => {
 
   const users = {
@@ -21,7 +23,7 @@ const Add = () => {
 
   const submitForm = async(e) =>{
     e.preventDefault();
-    await axios.post("http://localhost:8000/api/create", user)
+    await axios.post(`${apiUrl}/api/create`, user)
     .then((response)=>{
        toast.success(response.data.msg, {position:"top-right"})
        navigate("/")

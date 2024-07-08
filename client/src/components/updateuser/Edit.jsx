@@ -4,6 +4,8 @@ import axios from "axios";
 import "../adduser/add.css";
 import toast from 'react-hot-toast';
 
+const apiUrl = process.env.REACT_APP_API_URL
+
 const Edit = () => {
 
  const users = {
@@ -22,7 +24,7 @@ const Edit = () => {
  }
 
  useEffect(()=>{
-    axios.get(`http://localhost:8000/api/getone/${id}`)
+    axios.get(`${apiUrl}/api/getone/${id}`)
     .then((response)=>{
         setUser(response.data)
     })
@@ -34,7 +36,7 @@ const Edit = () => {
 
  const submitForm = async(e)=>{
     e.preventDefault();
-    await axios.put(`http://localhost:8000/api/update/${id}`, user)
+    await axios.put(`${apiUrl}/api/update/${id}`, user)
     .then((response)=>{
        toast.success(response.data.msg, {position:"top-right"})
        navigate("/")
